@@ -2,12 +2,16 @@
 
 
 import './App.css'
+
+import Wrapper from './wrapper/Wrapper';
 /*
 import UsersDetails from './components/users/UsersDetails';
 import FirstUseState from './hooks/FirstUseState';
 import HideShow from './hooks/HideShow';
-*/
 import Condition from './hooks/Condition';
+import UserComponent from './props/UserComponent';
+*/
+
 
 function App() {
   const userName = "Raghuvar";
@@ -23,10 +27,14 @@ function App() {
         <UsersDetails/>
         <FirstUseState/>
         <HideShow/>
+         <Condition/>
+         <UserComponent/>
       */
-
-    }
-    <Condition/>
+    }  
+    <Wrapper>
+      <h1>Wrapper for testing</h1>
+    </Wrapper>
+   
     
       
     </>
