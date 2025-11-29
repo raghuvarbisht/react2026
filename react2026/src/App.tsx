@@ -3,14 +3,22 @@
 
 import './App.css'
 
-import Wrapper from './wrapper/Wrapper';
+
 /*
 import UsersDetails from './components/users/UsersDetails';
-import FirstUseState from './hooks/FirstUseState';
-import HideShow from './hooks/HideShow';
-import Condition from './hooks/Condition';
+import FirstUseState from './hooksExample/FirstUseState';
+import HideShow from './hooksExampleExample/HideShow';
+import Condition from './hooksExample/Condition';
 import UserComponent from './props/UserComponent';
+import UserForm from './hooksExample/UserForm';
+import Wrapper from './wrapper/Wrapper';
+import UserApplicationForm from './hooksExample/UserApplicationForm';
+import BUseEffect from './hooks/BUseEffect';
+import Parent from './parentchild/Parent';
 */
+
+import DForwardRef from './hooks/DForwardRef';
+import FUserformStatus from './hooks/FUseFormStatus';
 
 
 function App() {
@@ -27,13 +35,22 @@ function App() {
         <UsersDetails/>
         <FirstUseState/>
         <HideShow/>
-         <Condition/>
-         <UserComponent/>
+        <Condition/>
+        <UserComponent/>
+        <Wrapper>
+          <h1>Wrapper for testing</h1>
+        </Wrapper>
+        <UserForm/>
+         <UserApplicationForm/>
+         <BUseEffect/>
+         <Parent/>
       */
     }  
-    <Wrapper>
-      <h1>Wrapper for testing</h1>
-    </Wrapper>
+    
+     <DForwardRef/>
+
+     <FUserformStatus/>
+     
    
     
       
