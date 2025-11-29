@@ -20,8 +20,12 @@ const RoutePage = () => {
                 <Route path="/" element={<Home/>}></Route>
                 <Route path="/about" element={<About/>}></Route>
                 <Route path="/contact" element={<Contact/>}></Route>
+
+                {/* nested route below for college */}
                 <Route path="/college" element={<College/>}>
-                    <Route path="student" element={<Student/>}></Route>
+                    {/*<Route path="student" element={<Student/>}></Route>*/}
+                    {/** use index for loading student as default child route */}
+                    <Route index element={<Student/>}></Route>
                     <Route path="department" element={<Department/>}></Route>
                 </Route>
                 <Route path="/*" element={<PageNotFound/>}></Route>

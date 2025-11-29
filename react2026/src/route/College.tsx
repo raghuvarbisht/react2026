@@ -4,7 +4,9 @@ const College = () => {
     return (
         <div>
            <h1> College Page</h1>
-           <NavLink className="link" to="student">Student</NavLink>
+           {/*<NavLink className="link" to="student">Student</NavLink>*/}
+           {/* with index in routepage.tsx donot pass anything inside to for default load of student component */}
+           <NavLink className="link" to="">Student</NavLink>
            <NavLink className="link" to="department">Department</NavLink>
            {/*outlet display child component in nested route*/}
            <Outlet/>
