@@ -1,14 +1,13 @@
-
-
-
 import './App.css'
+import RoutePage from './route/RoutePage'
+// routing specific code
+
+
+/*
 import AContextComponent from './hooks/contextApi/AContextComponent';
 import { SubjectContext } from './hooks/contextApi/CreateContext';
 import { useState } from 'react';
 
-
-
-/*
 import UsersDetails from './components/users/UsersDetails';
 import FirstUseState from './hooksExample/FirstUseState';
 import HideShow from './hooksExampleExample/HideShow';
@@ -32,10 +31,9 @@ import JUserId from './hooks/JUseId';
  
 
 function App() {
-  const userName = "Raghuvar";
-  let x =10;
-
-  const [subject, setSubject] = useState('English')
+  // const userName = "Raghuvar";
+  //  let x = 10;
+  //  const [subject, setSubject] = useState('English')
 
   return (
     <>
@@ -66,16 +64,23 @@ function App() {
         <JUserId/>
       */
     }  
+    {
+      /*    
+        <SubjectContext.Provider value={subject}>
+          Select subject : <select onChange={(event) => setSubject(event?.target.value)}>
+            <option value="English"> English</option>
+            <option value="Hindi"> Hindi</option>
+            <option value="Math"> Math</option>
+            <option value="Science"> Science</option>
+          </select>
+          <AContextComponent/>
+        </SubjectContext.Provider>
+      */
+    }
+     
+    <RoutePage/>
     
-    <SubjectContext.Provider value={subject}>
-      Select subject : <select onChange={(event) => setSubject(event?.target.value)}>
-        <option value="English"> English</option>
-        <option value="Hindi"> Hindi</option>
-        <option value="Math"> Math</option>
-        <option value="Science"> Science</option>
-      </select>
-      <AContextComponent/>
-    </SubjectContext.Provider>
+    
     
       
     </>
