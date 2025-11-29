@@ -2,7 +2,8 @@
 
 
 import './App.css'
-import ArrayUseState from './stateupdate/ArrayUseState';
+import IUseActionState from './hooks/IUseActionState';
+
 
 /*
 import UsersDetails from './components/users/UsersDetails';
@@ -19,6 +20,7 @@ import HooksExample from './hooks/HooksExample';
 import DerivedState from './derivedstate/DerivedState';
 import LiftingState from './liftingstate/LiftingState';
 import ObjectUseState from './stateupdate/ObjectUseState';
+import ArrayUseState from './stateupdate/ArrayUseState';
 */
 
  
@@ -49,11 +51,12 @@ function App() {
         <DerivedState/>
         <LiftingState/>
         <ObjectUseState />
+        <ArrayUseState />
       */
     }  
     
+    <IUseActionState />
     
-    <ArrayUseState />
       
     </>
   )
