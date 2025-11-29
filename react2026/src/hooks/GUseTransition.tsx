@@ -6,14 +6,14 @@ const GUseTransition = ()=> {
 
     const handleSubmit = () => {
         setTransition( async () => {
-            await new Promise( (res) => setTimeout(res,5000));
+            await new Promise( (res) => setTimeout(res,3000));
         })
     }
 
 
     return (
         <div>
-            <div v-if="transition"> loading....</div>
+            {transition ? <div > loading....</div> : null}
             <button disabled={transition} onClick={handleSubmit}>Click me</button>
         </div>
     )
