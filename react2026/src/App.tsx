@@ -2,7 +2,10 @@
 
 
 import './App.css'
-import IUseActionState from './hooks/IUseActionState';
+import AContextComponent from './hooks/contextApi/AContextComponent';
+import { SubjectContext } from './hooks/contextApi/CreateContext';
+import { useState } from 'react';
+
 
 
 /*
@@ -21,13 +24,18 @@ import DerivedState from './derivedstate/DerivedState';
 import LiftingState from './liftingstate/LiftingState';
 import ObjectUseState from './stateupdate/ObjectUseState';
 import ArrayUseState from './stateupdate/ArrayUseState';
+import IUseActionState from './hooks/IUseActionState';
+import JUserId from './hooks/JUseId';
 */
+
 
  
 
 function App() {
   const userName = "Raghuvar";
-  let x =10
+  let x =10;
+
+  const [subject, setSubject] = useState('English')
 
   return (
     <>
@@ -51,11 +59,23 @@ function App() {
         <DerivedState/>
         <LiftingState/>
         <ObjectUseState />
-        <ArrayUseState />
+        <ArrayUseState />        
+        <IUseActionState />
+        <JUserId/>
+        <JUserId/>
+        <JUserId/>
       */
     }  
     
-    <IUseActionState />
+    <SubjectContext.Provider value={subject}>
+      Select subject : <select onChange={(event) => setSubject(event?.target.value)}>
+        <option value="English"> English</option>
+        <option value="Hindi"> Hindi</option>
+        <option value="Math"> Math</option>
+        <option value="Science"> Science</option>
+      </select>
+      <AContextComponent/>
+    </SubjectContext.Provider>
     
       
     </>
