@@ -18,7 +18,6 @@ import Wrapper from './wrapper/Wrapper';
 import UserApplicationForm from './hooksExample/UserApplicationForm';
 import BUseEffect from './hooks/BUseEffect';
 import Parent from './parentchild/Parent';
-import HooksExample from './hooks/HooksExample';
 import DerivedState from './derivedstate/DerivedState';
 import LiftingState from './liftingstate/LiftingState';
 import ObjectUseState from './stateupdate/ObjectUseState';
@@ -28,6 +27,7 @@ import JUserId from './hooks/JUseId';
 */
 
 
+import AHooksExample from './hooks/AHooksExample';
  
 
 function App() {
@@ -79,6 +79,8 @@ function App() {
     }
      
     <RoutePage/>
+
+    <AHooksExample/>
     
     
     

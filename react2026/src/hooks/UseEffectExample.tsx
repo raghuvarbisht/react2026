@@ -1,6 +1,6 @@
 import { useState , useEffect } from "react";
 
-const BUseEffect  = () => {
+const UseEffectExample  = () => {
     const [counter, setCounter] = useState(0)
     const [data, setData] = useState(0)
     
@@ -29,14 +29,18 @@ const BUseEffect  = () => {
     return (
         <div>
             <h2>Counter value : {counter}</h2>
-            <button onClick={() => setCounter(counter + 1)}> Increased Counter {counter}</button>
+            <button onClick={() => setCounter(counter + 1)}> 
+                Increased Counter {counter}
+            </button>
 
             <h2>Data value : {data}</h2>
-            <button onClick={() => setData(data + 1)}> Data Value {data}</button>
+            <button onClick={() => setData(data + 1)}> 
+                Data Value {data}
+            </button>
            
         </div>
 
     )
 }
 
-export default BUseEffect;
+export default UseEffectExample;

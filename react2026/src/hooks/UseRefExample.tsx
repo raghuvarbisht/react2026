@@ -1,6 +1,6 @@
 import { useRef } from "react";
 
-export default function CUseRef() {
+export default function UseRefExample() {
   const inputRef = useRef<HTMLInputElement | null>(null);
 
   const handleFocus = () => {

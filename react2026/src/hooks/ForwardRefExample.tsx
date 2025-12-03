@@ -1,6 +1,6 @@
 import { useRef } from "react"
-import EForwardRef from "./EForwardRef";
-const DForwardRef = () => {
+import ForwardRefExampleChild from "./ForwardRefExampleChild";
+const ForwardRefExample = () => {
 
     const inputRef = useRef<HTMLInputElement | null>(null);
     const updateInput = () => {
@@ -14,11 +14,11 @@ const DForwardRef = () => {
     return (
         <div>
             <h1>FordRefExample</h1>
-            <EForwardRef ref={inputRef}/>
+            <ForwardRefExampleChild ref={inputRef}/>
             <button onClick={updateInput}>Click on </button>
         </div>
     )
 
 }
 
-export default DForwardRef;
+export default ForwardRefExample;

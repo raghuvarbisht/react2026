@@ -1,8 +1,7 @@
 // useFormStatus work with form only
 import {  useFormStatus } from "react-dom";
 
-
-const FUserformStatus = () => {
+const UseFormStatusExample = () => {
 
     const CustomUserForm = () => {
         const {pending} = useFormStatus();
@@ -32,4 +31,4 @@ const FUserformStatus = () => {
     )
 }
 
-export default FUserformStatus;
+export default UseFormStatusExample;

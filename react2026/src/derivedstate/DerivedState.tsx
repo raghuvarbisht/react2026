@@ -1,9 +1,10 @@
 
 /*
 Derived State means:
-👉 A value that can be computed from existing state or props, instead of storing it
- separately in state.
-In React, you should not store something in state if you can calculate it from other 
+👉 A value that can be computed from existing state or props, 
+instead of storing it separately in state.
+In React, you should not store something in state if 
+you can calculate it from other 
 state values.
 
 */

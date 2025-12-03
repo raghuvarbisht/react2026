@@ -1,6 +1,6 @@
 import { useId } from "react";
 
-const JUserId = () => {
+const UserIdExample = () => {
   const id = useId(); // unique, stable
 
   return (
@@ -15,4 +15,4 @@ const JUserId = () => {
   );
 }
 
-export default JUserId;
+export default UserIdExample;

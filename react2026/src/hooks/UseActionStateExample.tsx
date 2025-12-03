@@ -1,6 +1,6 @@
 import { useActionState } from "react";
 
-const IUseActionState = () => {
+const UseActionStateExample = () => {
     const handleSumbit = async (_previousData : any, formData : any) => {
         let name = formData.get('username');
         let pwd = formData.get('password'); 
@@ -41,4 +41,4 @@ const IUseActionState = () => {
 
 }
 
-export default IUseActionState;
+export default UseActionStateExample;

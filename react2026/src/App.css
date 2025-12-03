@@ -13,3 +13,7 @@ input:text {
 .link {
   margin:10px;
 }
+
+.link.active {
+  color:green;
+}

@@ -1,5 +1,5 @@
 import { forwardRef } from "react";
-const EForwardRef = ( _props: any, ref : any) => {
+const ForwardRefExampleChild = ( _props: any, ref : any) => {
 
     return (
         <div>
@@ -9,4 +9,4 @@ const EForwardRef = ( _props: any, ref : any) => {
 
 }
 
-export default forwardRef(EForwardRef);
+export default forwardRef(ForwardRefExampleChild);
