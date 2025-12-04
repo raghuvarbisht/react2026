@@ -5,8 +5,11 @@ import UseRefExample from "./UseRefExample";
 import ForwardRefExample from "./ForwardRefExample";
 import ForwardRefExampleChild from "./ForwardRefExampleChild";
 import UserformStatusExample from "./UserformStatusExample";
-*/
 import UseTransitionExample from "./UseTransitionExample";
+*/
+
+import UseCallbackExample from "./UseCallbackExample";
+import UseMemoExample from "./UseMemoExample";
 
 
 const AHooksExample = () => {
@@ -21,10 +24,12 @@ const AHooksExample = () => {
                 <ForwardRefExample/>
                 <ForwardRefExampleChild/>
                 <UserformStatusExample/>
-                
+                <UseTransitionExample/>
+                <UseMemoExample/>
              */
         }
-        <UseTransitionExample/>
+        
+        <UseCallbackExample/>
         </>
         
     )
