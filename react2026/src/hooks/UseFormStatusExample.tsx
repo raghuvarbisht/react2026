@@ -1,3 +1,11 @@
+/*
+ * useFormStatus Hook Example
+ * Definition 1: useFormStatus is a React Hook from react-dom that provides information about form submissions.
+ * Definition 2: It returns the pending state of a form submission and the form data being submitted.
+ * Definition 3: It must be used inside a form element and is designed for Server Components and Actions.
+ * Definition 4: It allows you to show loading states, disable buttons, or display feedback during form submission.
+ */
+
 // useFormStatus work with form only
 import {  useFormStatus } from "react-dom";
 

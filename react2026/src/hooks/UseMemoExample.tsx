@@ -1,3 +1,11 @@
+/*
+ * useMemo Hook Example
+ * Definition 1: useMemo is a React Hook that memoizes a computed value and returns the same reference across renders.
+ * Definition 2: It prevents expensive computations from running on every render by caching the result.
+ * Definition 3: The dependency array controls when the memoized value is recalculated.
+ * Definition 4: It should be used for expensive calculations or when passing objects/arrays to optimized child components.
+ */
+
 import { useState } from "react";
 import UseMemoExampleChild from "./UseMemoExampleChild.tsx";
 

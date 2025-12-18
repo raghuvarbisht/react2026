@@ -1,3 +1,11 @@
+/*
+ * useReducer Hook Example
+ * Definition 1: useReducer is a React Hook for managing complex state logic in functional components.
+ * Definition 2: It takes a reducer function and initial state, returning the current state and a dispatch function.
+ * Definition 3: The reducer function determines how state changes based on actions dispatched by the component.
+ * Definition 4: It is preferred over useState when you have complex state transitions or multiple related state values.
+ */
+
 import { useReducer } from "react";
 
 type State = {

@@ -1,3 +1,11 @@
+/*
+ * useActionState Hook Example
+ * Definition 1: useActionState is a React Hook that handles form submissions and Server Actions.
+ * Definition 2: It returns the data, action function, and pending state for managing form submission lifecycle.
+ * Definition 3: It automatically manages loading states and error handling during asynchronous operations.
+ * Definition 4: It integrates seamlessly with form elements and Server Components for enhanced UX.
+ */
+
 import { useActionState } from "react";
 
 const UseActionStateExample = () => {

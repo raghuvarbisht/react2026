@@ -1,3 +1,11 @@
+/*
+ * useEffect Hook Example
+ * Definition 1: useEffect is a React Hook for performing side effects in functional components.
+ * Definition 2: It replaces lifecycle methods like componentDidMount, componentDidUpdate, and componentWillUnmount.
+ * Definition 3: The dependency array controls when the effect runs - empty array runs once, undefined runs every render.
+ * Definition 4: Return a cleanup function to perform cleanup before the component unmounts or effect runs again.
+ */
+
 import { useState , useEffect } from "react";
 
 const UseEffectExample  = () => {
