@@ -1,3 +1,11 @@
+/*
+ three pillars of dealing with forms
+Form state management
+Form submission
+Form validation
+*/
+
+
 //npm install react-hook-form
 //npm install -D @hookform/devtools
 import { useForm } from "react-hook-form";
